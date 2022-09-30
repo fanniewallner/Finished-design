@@ -1,5 +1,8 @@
+@use "variables";
+@use "mixins";
+
 html {
-    font-family: ;
+    // font-family: ;
 }
 
 body {
@@ -9,3 +12,25 @@ body {
 }
 
 // Ovan ska vara i reset-fil sen!!!
+
+#hero {
+    height: 100vh;
+    background-image: url(/Assets/negative-space-black-forest-dawn.jpg);
+    background-size: cover;
+    background-position: top;
+    @include mixins.center-column;
+}
+
+.hero-title {
+    color: variables.$light-text-color;
+}
+
+.hero-text {
+    color:variables.$light-text-color;
+}
+
+// footer {
+// background-color:variables.$dark-bg;
+// color: variables.$light-text-color;
+// }
+// Ska flyttas till ny scss-fil, _contact

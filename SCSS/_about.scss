@@ -1,0 +1,20 @@
+@use "mixins";
+@use "variables";
+
+
+// img {
+//     @include mixins.circle-img(350px);
+// }
+
+
+.img-container {
+    @include mixins.center-column;
+
+    &__img {
+        @include mixins.circle-img(230px);  
+    }
+
+    &__text {
+        @include mixins.card-text;
+    }
+}

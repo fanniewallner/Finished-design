@@ -1,0 +1,44 @@
+// Bilder
+
+// @mixin circle-img {
+//     width: 60%;
+//     height: auto; 
+//     border-radius: 50%;   
+// }
+
+@mixin circle-img($imgSize) {
+    box-shadow: gray 0 0 50px 1px;
+    border-radius: 50%;
+    width: $imgSize;
+    
+}
+
+// Texter
+
+@mixin card-text {
+    background-color: lightgrey;
+    border-radius: 7px;
+    padding: 10%;
+    margin: 10%;
+}
+
+
+
+
+// Positionering
+@mixin center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin center-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+// Färger
+
