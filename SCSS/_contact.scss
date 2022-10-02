@@ -1,0 +1,30 @@
+@use "mixins";
+@use "variables";
+
+.footer {
+    background-color: black;
+    @include mixins.center-column;
+
+    &__container-footer {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__address {
+        color: variables.$light-text-color;
+        padding: variables.$footer-padding;
+        align-items: variables.$text-align-left;
+    }
+
+    &__contact-info {
+        color: variables.$light-text-color;
+        padding: variables.$footer-padding;
+    }
+
+    &__icons {
+        color: variables.$light-text-color;
+        padding: variables.$footer-padding;
+    }
+
+    
+}

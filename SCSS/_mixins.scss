@@ -1,11 +1,12 @@
+// Mediaqueries
+
+//  @mixin tablet {
+//      @media screen and(min-width:768px;) {
+//         @content;
+//     }
+//  }
+
 // Bilder
-
-// @mixin circle-img {
-//     width: 60%;
-//     height: auto; 
-//     border-radius: 50%;   
-// }
-
 @mixin circle-img($imgSize) {
     box-shadow: gray 0 0 50px 1px;
     border-radius: 50%;
@@ -36,9 +37,23 @@
 @mixin center-row {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    // justify-content: center;
+    // align-items: center;
 }
 
 // Färger
 
+
+// Navbar
+
+@mixin nav-desktop{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+}
+
+@mixin nav-links {
+    list-style-type: none;
+}

@@ -2,13 +2,12 @@
 @use "variables";
 
 
-// img {
-//     @include mixins.circle-img(350px);
-// }
-
-
 .img-container {
     @include mixins.center-column;
+
+    &__name {
+        font-weight: bold;
+    }
 
     &__img {
         @include mixins.circle-img(230px);  
@@ -17,4 +16,35 @@
     &__text {
         @include mixins.card-text;
     }
+
+    span {
+        font-size: 4em;
+    }
+
+    // @include mixins.tablet {
+    //     .content-card-container{
+    //         @include mixins.center-row;
+    //     }
+
+    //     .img-container{
+    //         display: inline-block;
+    //     }
+    // }
+
+    // @include mixins.tablet {
+
+    //     .img-container{
+    //         display: flex;
+    //         flex: row
+
+    //     }
+
+
+    // }
 }
+
+a {
+    text-decoration: none;
+    color: variables.$light-text-color;
+}
+
