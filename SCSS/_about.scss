@@ -1,9 +1,20 @@
 @use "mixins";
 @use "variables";
 
+.content-card-container {
+    @include mixins.dator {
+        width: 100vw;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 
 .img-container {
     @include mixins.center-column;
+    @include mixins.dator {
+        width: 50%;
+    }
 
     &__name {
         font-weight: bold;
@@ -17,30 +28,11 @@
         @include mixins.card-text;
     }
 
-    span {
-        font-size: 4em;
-    }
+     &__quote {
+         font-size: 4em;
+         margin-bottom: 0;
+     }
 
-    // @include mixins.tablet {
-    //     .content-card-container{
-    //         @include mixins.center-row;
-    //     }
-
-    //     .img-container{
-    //         display: inline-block;
-    //     }
-    // }
-
-    // @include mixins.tablet {
-
-    //     .img-container{
-    //         display: flex;
-    //         flex: row
-
-    //     }
-
-
-    // }
 }
 
 a {
