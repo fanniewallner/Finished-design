@@ -7,13 +7,23 @@ $big-screen: 1200px;
 // Text
 $light-text-color: white;
 $size-quote: 3em;
+$size-hero-title: 1.8em;
+$size-hero-text:1.2em;
+
 
 // Färger
 $dark-bg: black;
 $light-bg: white;
 
 // Spacing
-$footer-padding:5px;
+$footer-padding:10px;
+$hero-padding:60px;
+$hero-padding-bottom:30px;
+$h2-margin:20px;
+$arrow-pad:20px;
 
 // Positioning row
 $text-align-left: align-items-left;
+
+// Cards
+$card-width: 80%

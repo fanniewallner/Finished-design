@@ -1,9 +1,18 @@
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, Arial, serif;
+  background-color: #f4f4f4;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #000;
+}
+
 .header {
-  background-color: transparent;
-  box-shadow: 1px 1px 4px 0 rgba(245, 241, 241, 0.1);
-  position: fixed;
+  background-color: rgba(245, 245, 245, 0.1);
+  box-shadow: 1px 1px 4px 0 rgba(245, 245, 245, 0.1);
   width: 100%;
-  top: 0;
   z-index: 3;
 }
 
@@ -12,19 +21,28 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: rgba(255, 254, 254, 0.1);
+  background-color: 1px 1px 4px 0 rgba(245, 245, 245, 0.1);
 }
 
 .header li a {
   display: block;
-  padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
+  border-right: 1px transparent;
   text-decoration: none;
+  text-align: center;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(245, 245, 245, 0.1);
+  color: white;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
 }
 
 /* menu */
@@ -39,7 +57,7 @@
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 28px 28px;
+  padding: 28px 20px;
   position: relative;
   user-select: none;
 }
@@ -98,13 +116,25 @@
   top: 0;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Times New Roman", Times, arial, serif;
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .header li a:hover {
+    color: white;
+  }
 }
-
 #hero {
   height: 100vh;
   background-image: url(/Assets/negative-space-black-forest-dawn.jpg);
@@ -116,23 +146,44 @@ body {
   align-items: center;
 }
 
-.hero-slogan {
+.hero-container {
+  height: 100vh;
+  padding-top: 200px;
+  position: absolute;
+}
+.hero-container__title {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8em;
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-bottom: 30px;
+}
+.hero-container__text {
+  color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-}
-
-.hero-title {
-  color: white;
-}
-
-.hero-text {
-  color: white;
-}
-
-h2 {
   text-align: center;
+  font-size: 1.2em;
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-bottom: 30px;
+}
+
+#icon-container-white {
+  color: white;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+}
+.icon-container__arrow {
+  justify-self: center;
 }
 
 .footer {
@@ -157,16 +208,25 @@ h2 {
 }
 .footer__address {
   color: white;
-  padding: 5px;
+  padding: 10px;
   align-items: align-items-left;
 }
 .footer__contact-info {
   color: white;
-  padding: 5px;
+  padding: 10px;
 }
 .footer__icons {
   color: white;
-  padding: 5px;
+  padding: 10px;
+}
+
+h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -187,6 +247,7 @@ h2 {
 @media screen and (min-width: 1200px) {
   .img-container {
     width: 50%;
+    display: flex;
   }
 }
 .img-container__name {
@@ -198,19 +259,45 @@ h2 {
   width: 230px;
 }
 .img-container__text {
-  background-color: lightgrey;
+  width: 300px;
+  height: 150px;
+  background-color: lightgray;
   border-radius: 7px;
   padding: 10%;
-  margin: 10%;
+  margin: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.img-container__quote {
-  font-size: 4em;
-  margin-bottom: 0;
+@media screen and (min-width: 1200px) {
+  .img-container__text {
+    width: 450px;
+    height: 100px;
+  }
+}
+
+.fa-solid {
+  margin-right: 10px;
+  margin-top: 0px;
+  padding: 20px;
+}
+
+i {
+  font-size: 2em;
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+.icon-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  font-size: 15px;
+  color: black;
 }
 
 /*# sourceMappingURL=main.css.map */

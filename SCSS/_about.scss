@@ -1,6 +1,12 @@
 @use "mixins";
 @use "variables";
 
+h2 {
+    @include mixins.center-column;
+    font-weight: bold;
+    margin-top: variables.$h2-margin;
+}
+
 .content-card-container {
     @include mixins.dator {
         width: 100vw;
@@ -11,9 +17,10 @@
 }
 
 .img-container {
-    @include mixins.center-column;
+    @include mixins.center-cards;
     @include mixins.dator {
         width: 50%;
+        display: flex;
     }
 
     &__name {
@@ -26,17 +33,31 @@
 
     &__text {
         @include mixins.card-text;
+        @include mixins.dator {
+            width: 450px;
+            height:100px;
+        }
+     }
     }
 
-     &__quote {
-         font-size: 4em;
-         margin-bottom: 0;
-     }
+    .fa-solid {
+        margin-right: 10px;
+        margin-top: 0px;
+        padding: variables.$arrow-pad;
 
+    }
+
+i {
+    font-size: 2em;
 }
 
 a {
     text-decoration: none;
     color: variables.$light-text-color;
+}
+
+.icon-container {
+    @include mixins.arrow;
+    color:black;
 }
 

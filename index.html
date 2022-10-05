@@ -17,32 +17,39 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/d547fba5db.js"
+      crossorigin="anonymous"
+    ></script>
     <link href="css/main.css" rel="stylesheet" />
-    <title>Document</title>
+    <title>Färdig Design</title>
   </head>
   <body>
     <main>
       <div id="hero">
-        <header class="header">
+        <section class="header">
+          <a href="" class="Logo"></a>
           <input class="menu-btn" type="checkbox" id="menu-btn" />
           <label class="menu-icon" for="menu-btn"
             ><span class="navicon"></span
           ></label>
           <ul class="menu">
-            <li><a href="#about">Hem</a></li>
-            <li><a href="#careers">Oss</a></li>
-            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#">Hem</a></li>
+            <li><a href="#">Oss</a></li>
+            <li><a href="#">Kontakt</a></li>
           </ul>
-        </header>
-        <section class="hero-slogan">
-          <h3 class="hero-title">Welcome to nature</h3>
-          <p class="hero-text">A journey through time and sheep</p>
-          <p class="hero-text">
+        </section>
+        <section class="hero-container">
+          <h3 class="hero-container__title">Welcome to nature</h3>
+          <p class="hero-container__text">A journey through time and sheep</p>
+          <p class="hero-container__text">
             To see how ...cotton ... is mage, made I mean...
           </p>
         </section>
+        <a href="#_about" class="icon-container" id="icon-container-white">
+          <i class="fa-solid fa-circle-down"></i>
+        </a>
       </div>
-      <figure>Vit ikon här!</figure>
     </main>
     <section>
       <h2>Träffa laget</h2>
@@ -55,20 +62,7 @@
             alt="Rakib"
           />
           <p class="img-container__text">
-            <span class="img-container__quote">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-quote"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
-                />
-              </svg>
-            </span>
+            <i class="fa-solid fa-quote-right"></i>
             Rakib är vår vassaste node-utvecklare och håller ständigt ett öga på
             nya tekniker
           </p>
@@ -81,20 +75,7 @@
             alt="Alexandra"
           />
           <p class="img-container__text">
-            <span class="img-container__quote">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-quote"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
-                />
-              </svg>
-            </span>
+            <i class="fa-solid fa-quote-right"></i>
             Alexandra håller reda på alla överallt och ser till att det flyter
           </p>
         </article>
@@ -108,20 +89,7 @@
             alt="Lasse"
           />
           <p class="img-container__text">
-            <span class="img-container__quote">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-quote"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
-                />
-              </svg>
-            </span>
+            <i class="fa-solid fa-quote-right"></i>
             Gör övriga saker... mestadels ...
           </p>
         </article>
@@ -133,23 +101,13 @@
             alt="Sebastian"
           />
           <p class="img-container__text">
-            <span class="img-container__quote">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-quote"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
-                />
-              </svg>
-            </span>
+            <i class="fa-solid fa-quote-right"></i>
             En av våra utbildare som har stor erfarenhet av ganska många saker
           </p>
         </article>
+        <a href="#contact" class="icon-container">
+          <i class="fa-solid fa-circle-down"></i>
+        </a>
       </section>
     </section>
     <footer class="footer">

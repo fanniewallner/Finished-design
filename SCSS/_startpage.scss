@@ -5,66 +5,75 @@
 //     // font-family: ;
 // }
 
-// // .hero {
-// //     position: relative;
-// // }
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, Arial, serif;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #000;
+}
 
 .header {
-    background-color: transparent;
-    box-shadow: 1px 1px 4px 0 rgba(245, 241, 241, 0.1);
-    position: fixed;
+    background-color: rgba(245, 245, 245, 0.1);
+    box-shadow: 1px 1px 4px 0 rgba(245, 245, 245, 0.1);
+    // position: fixed;
     width: 100%;
-    top: 0;
+    // top: 0;
     z-index: 3;
   }
-  
+
   .header ul {
     margin: 0;
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: rgba(255, 254, 254, 0.1);
+    background-color: 1px 1px 4px 0 rgba(245, 245, 245, 0.1);
   }
-  
+
   .header li a {
     display: block;
-    padding: 20px 20px;
-    border-right: 1px solid #f4f4f4;
+    // padding: 20px 20px;
+    border-right: 1px transparent;
     text-decoration: none;
+    text-align: center;
   }
-  
+
   .header li a:hover,
   .header .menu-btn:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(245, 245, 245, 0.1);
+    color: white;
   }
-  
-//    .header .logo {
-//      display: block;
-//      float: left;
-//      font-size: 2em;
-//      padding: 10px 20px;
-//      text-decoration: none;
-//    }
-  
+
+    .header .logo {
+      display: block;
+      float: left;
+      font-size: 2em;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+
   /* menu */
-  
+
   .header .menu {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
   }
-  
+
   /* menu icon */
-  
+
   .header .menu-icon {
     cursor: pointer;
     display: inline-block;
     float: right;
-    padding: 28px 28px;
+    padding: 28px 20px;
     position: relative;
     user-select: none;
   }
-  
+
   .header .menu-icon .navicon {
     background: white;
     display: block;
@@ -73,7 +82,7 @@
     transition:.2s ease-out;
     width: 18px;
   }
-  
+
   .header .menu-icon .navicon:before,
   .header .menu-icon .navicon:after {
     background: white;
@@ -84,50 +93,63 @@
     transition: all .2s ease-out;
     width: 100%;
   }
-  
+
   .header .menu-icon .navicon:before {
     top: 5px;
   }
-  
+
   .header .menu-icon .navicon:after {
     top: -5px;
   }
-  
+
   /* menu btn */
-  
+
   .header .menu-btn {
     display: none;
   }
-  
+
   .header .menu-btn:checked ~ .menu {
     max-height: 240px;
   }
-  
+
   .header .menu-btn:checked ~ .menu-icon .navicon {
     background: transparent;
   }
-  
+
   .header .menu-btn:checked ~ .menu-icon .navicon:before {
     transform: rotate(-45deg);
   }
-  
+
   .header .menu-btn:checked ~ .menu-icon .navicon:after {
     transform: rotate(45deg);
   }
-  
+
   .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
   .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     top: 0;
   }
 
+  @media (min-width:48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
 
+    .header li a:hover {
+      color: white;
+    }
+  }
 
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, arial, serif;
-}
 
 // Ovan ska vara i reset-fil sen!!!
 
@@ -139,20 +161,42 @@ body {
     @include mixins.center-column;
 }
 
-.hero-slogan {
 
-    @include mixins.center-column;
+.hero-container {
+    height: 100vh;
+    padding-top: 200px;
+    position: absolute;
+
+    &__title{
+        color: variables.$light-text-color;
+        @include mixins.center-row;
+        font-size:variables.$size-hero-title;
+        padding-right:variables.$hero-padding;
+        padding-left:variables.$hero-padding;
+        padding-bottom:variables.$hero-padding-bottom;
+    }
+
+    &__text{
+        color:variables.$light-text-color;
+        @include mixins.center-column-text;
+        text-align: center;
+        font-size:variables.$size-hero-text;
+        padding-right:variables.$hero-padding;
+        padding-left:variables.$hero-padding;
+        padding-bottom:variables.$hero-padding-bottom;
+    }
 }
 
-.hero-title {
-    color: variables.$light-text-color;
+#icon-container-white {
+  color: white;
 }
 
-.hero-text {
-    color:variables.$light-text-color;
-}
+.icon-container {
+    display: flex;
+    justify-content: center;
 
-h2 {
-    text-align: center;
+    &__arrow {
+        justify-self: center;
+    }
 }
 
