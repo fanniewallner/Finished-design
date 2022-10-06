@@ -40,29 +40,25 @@ h2 {
     &__text {
         @include mixins.card-text;
         @include mixins.dator {
-            width: 450px;
-            height:100px;
+            // width: 450px;
+            // height:100px;
         }
      }
     }
 
-    .fa-quote-right {
-        transform: scale(1,1.2);
-    }
-
-    // .fa-solid {
-    //     margin-right: 10px;
-    //     margin-top: 0px;
-
+    // div p {
+    //     margin-top: 40px;
     // }
 
-// i {
-//     font-size: 2em;
-// }
+    // .fa-quote-right {
+    //     transform: scale(1,1.4);
+    // }
 
 a {
     text-decoration: none;
     color: variables.$light-text-color;
+
+    a:hover { color: black; }
 }
 
 .icon-container {
@@ -72,8 +68,4 @@ a {
     @include mixins.dator {
         padding-bottom: 25px;
     }
-}
-
-.fa-solid {
-    hover:black;
 }

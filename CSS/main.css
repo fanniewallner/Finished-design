@@ -175,6 +175,7 @@ html, body {
 
 #icon-container-white {
   color: white;
+  z-index: 4;
 }
 
 .footer {
@@ -209,6 +210,10 @@ html, body {
 .footer__icons {
   color: white;
   padding: 15px;
+}
+
+a:hover {
+  color: black;
 }
 
 h2 {
@@ -297,10 +302,6 @@ a {
   .icon-container {
     padding-bottom: 25px;
   }
-}
-
-.fa-solid {
-  hover: black;
 }
 
 /*# sourceMappingURL=main.css.map */
