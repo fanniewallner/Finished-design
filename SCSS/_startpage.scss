@@ -1,20 +1,17 @@
 @use "variables";
 @use "mixins";
 
-// html {
-//     // font-family: ;
-// }
 
-body {
+html, body {
     margin: 0;
     font-family: 'Times New Roman', Times, Arial, serif;
     background-color: #f4f4f4;
     scroll-behavior: smooth;
 }
 
-a {
-    color: #000;
-}
+// a {
+//     color: #000;
+// }
 
 .header {
     background-color: rgba(245, 245, 245, 0.1);
@@ -61,6 +58,7 @@ a {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
+    font-size:variables.$nav-text;
   }
 
   /* menu icon */
@@ -168,9 +166,11 @@ a {
     position: absolute;
 
     &__title{
+      padding-top: 20px;
         color: variables.$light-text-color;
         @include mixins.center-row;
         font-size:variables.$size-hero-title;
+        font-weight: bolder;
         padding-right:variables.$hero-padding;
         padding-left:variables.$hero-padding;
         padding-bottom:variables.$hero-padding-bottom;
@@ -191,12 +191,12 @@ a {
   color: white;
 }
 
-.icon-container {
-    display: flex;
-    justify-content: center;
+// .icon-container {
+//     display: flex;
+//     justify-content: center;
 
-    &__arrow {
-        justify-self: center;
-    }
-}
+//     &__arrow {
+//         justify-self: center;
+//     }
+// }
 

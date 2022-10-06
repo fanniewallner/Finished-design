@@ -34,25 +34,26 @@
             ><span class="navicon"></span
           ></label>
           <ul class="menu">
-            <li><a href="#">Hem</a></li>
-            <li><a href="#">Oss</a></li>
-            <li><a href="#">Kontakt</a></li>
+            <li><a href="#home">Hem</a></li>
+            <li><a href="#about">Om</a></li>
+            <li><a href="#contact">Kontakt</a></li>
           </ul>
         </section>
-        <section class="hero-container">
+        <section class="hero-container" id="home">
           <h3 class="hero-container__title">Welcome to nature</h3>
           <p class="hero-container__text">A journey through time and sheep</p>
           <p class="hero-container__text">
             To see how ...cotton ... is mage, made I mean...
           </p>
         </section>
-        <a href="#_about" class="icon-container" id="icon-container-white">
+        <a href="#about" class="icon-container" id="icon-container-white">
           <i class="fa-solid fa-circle-down"></i>
-        </a>
+        </a> 
       </div>
     </main>
     <section>
       <h2>Träffa laget</h2>
+      <a id="about"></a>
       <section class="content-card-container">
         <article class="img-container">
           <p class="img-container__name">Rakib</p>
@@ -61,11 +62,13 @@
             src="Assets/profiles/Rakib_Square.png"
             alt="Rakib"
           />
-          <p class="img-container__text">
-            <i class="fa-solid fa-quote-right"></i>
-            Rakib är vår vassaste node-utvecklare och håller ständigt ett öga på
-            nya tekniker
-          </p>
+          <div class="img-container__text">
+            <p>
+              <i class="fa-solid fa-quote-right"></i>
+              Rakib är vår vassaste node-utvecklare och håller ständigt ett öga
+              på nya tekniker
+            </p>
+          </div>
         </article>
         <article class="img-container">
           <p class="img-container__name">Alexandra</p>
@@ -74,10 +77,12 @@
             src="Assets/profiles/Alexandra_Square.png"
             alt="Alexandra"
           />
-          <p class="img-container__text">
-            <i class="fa-solid fa-quote-right"></i>
-            Alexandra håller reda på alla överallt och ser till att det flyter
-          </p>
+          <div class="img-container__text">
+            <p>
+              <i class="fa-solid fa-quote-right"></i>
+              Alexandra håller reda på alla överallt och ser till att det flyter
+            </p>
+          </div>
         </article>
       </section>
       <section class="content-card-container">
@@ -88,10 +93,12 @@
             src="Assets/profiles/NoPerson_Square.png"
             alt="Lasse"
           />
-          <p class="img-container__text">
-            <i class="fa-solid fa-quote-right"></i>
-            Gör övriga saker... mestadels ...
-          </p>
+          <div class="img-container__text">
+            <p>
+              <i class="fa-solid fa-quote-right"></i>
+              Gör övriga saker... mestadels ...
+            </p>
+          </div>
         </article>
         <article class="img-container">
           <p class="img-container__name">Sebastian</p>
@@ -100,10 +107,12 @@
             src="Assets/profiles/Sebastian_Square.png"
             alt="Sebastian"
           />
-          <p class="img-container__text">
-            <i class="fa-solid fa-quote-right"></i>
-            En av våra utbildare som har stor erfarenhet av ganska många saker
-          </p>
+          <div class="img-container__text">
+            <p>
+              <i class="fa-solid fa-quote-right"></i>
+              En av våra utbildare som har stor erfarenhet av ganska många saker
+            </p>
+          </div>
         </article>
         <a href="#contact" class="icon-container">
           <i class="fa-solid fa-circle-down"></i>
@@ -121,8 +130,7 @@
           <article>info @ tegelconsulting.se</article>
           <article>070-123 456 78</article>
         </section>
-        <section class="footer__icons">
-          <article class="footer__flex-icon">
+        <section class="footer__icons" id="contact">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -175,7 +183,6 @@
               ></path>
             </svg>
             <a href="#">Facebook</a>
-          </article>
         </section>
       </div>
     </footer>

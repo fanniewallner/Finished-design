@@ -1,12 +1,8 @@
-body {
+html, body {
   margin: 0;
   font-family: "Times New Roman", Times, Arial, serif;
   background-color: #f4f4f4;
   scroll-behavior: smooth;
-}
-
-a {
-  color: #000;
 }
 
 .header {
@@ -50,6 +46,7 @@ a {
   clear: both;
   max-height: 0;
   transition: max-height 0.2s ease-out;
+  font-size: 1em;
 }
 
 /* menu icon */
@@ -152,12 +149,14 @@ a {
   position: absolute;
 }
 .hero-container__title {
+  padding-top: 20px;
   color: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   font-size: 1.8em;
+  font-weight: bolder;
   padding-right: 60px;
   padding-left: 60px;
   padding-bottom: 30px;
@@ -168,7 +167,7 @@ a {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.4em;
   padding-right: 60px;
   padding-left: 60px;
   padding-bottom: 30px;
@@ -176,14 +175,6 @@ a {
 
 #icon-container-white {
   color: white;
-}
-
-.icon-container {
-  display: flex;
-  justify-content: center;
-}
-.icon-container__arrow {
-  justify-self: center;
 }
 
 .footer {
@@ -208,16 +199,16 @@ a {
 }
 .footer__address {
   color: white;
-  padding: 10px;
+  padding: 15px;
   align-items: align-items-left;
 }
 .footer__contact-info {
   color: white;
-  padding: 10px;
+  padding: 15px;
 }
 .footer__icons {
   color: white;
-  padding: 10px;
+  padding: 15px;
 }
 
 h2 {
@@ -226,7 +217,8 @@ h2 {
   justify-content: space-between;
   align-items: center;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -256,7 +248,14 @@ h2 {
 .img-container__img {
   box-shadow: gray 0 0 50px 1px;
   border-radius: 50%;
-  width: 230px;
+  width: 175px;
+}
+@media screen and (min-width: 1200px) {
+  .img-container__img {
+    box-shadow: gray 0 0 50px 1px;
+    border-radius: 50%;
+    width: 230px;
+  }
 }
 .img-container__text {
   width: 300px;
@@ -264,10 +263,11 @@ h2 {
   background-color: lightgray;
   border-radius: 7px;
   padding: 10%;
-  margin: 3%;
+  margin: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
 }
 @media screen and (min-width: 1200px) {
   .img-container__text {
@@ -276,14 +276,8 @@ h2 {
   }
 }
 
-.fa-solid {
-  margin-right: 10px;
-  margin-top: 0px;
-  padding: 20px;
-}
-
-i {
-  font-size: 2em;
+.fa-quote-right {
+  transform: scale(1, 1.2);
 }
 
 a {
@@ -295,9 +289,18 @@ a {
   width: 100vw;
   display: flex;
   justify-content: center;
-  padding-bottom: 10px;
-  font-size: 15px;
+  padding-bottom: 30px;
+  font-size: 20px;
   color: black;
+}
+@media screen and (min-width: 1200px) {
+  .icon-container {
+    padding-bottom: 25px;
+  }
+}
+
+.fa-solid {
+  hover: black;
 }
 
 /*# sourceMappingURL=main.css.map */
