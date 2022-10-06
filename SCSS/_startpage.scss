@@ -9,16 +9,10 @@ html, body {
     scroll-behavior: smooth;
 }
 
-// a {
-//     color: #000;
-// }
-
 .header {
     background-color: rgba(245, 245, 245, 0.1);
     box-shadow: 1px 1px 4px 0 rgba(245, 245, 245, 0.1);
-    // position: fixed;
     width: 100%;
-    // top: 0;
     z-index: 3;
   }
 
@@ -32,7 +26,6 @@ html, body {
 
   .header li a {
     display: block;
-    // padding: 20px 20px;
     border-right: 1px transparent;
     text-decoration: none;
     text-align: center;
@@ -127,7 +120,7 @@ html, body {
     top: 0;
   }
 
-  @media (min-width:48em) {
+  @include mixins.desktop {
     .header li {
       float: left;
     }
@@ -145,11 +138,9 @@ html, body {
 
     .header li a:hover {
       color: white;
+      text-decoration: underline;
     }
   }
-
-
-// Ovan ska vara i reset-fil sen!!!
 
 #hero {
     height: 100vh;
@@ -191,13 +182,3 @@ html, body {
   color: white;
   z-index:4;
 }
-
-// .icon-container {
-//     display: flex;
-//     justify-content: center;
-
-//     &__arrow {
-//         justify-self: center;
-//     }
-// }
-

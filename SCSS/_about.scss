@@ -9,9 +9,9 @@ h2 {
 }
 
 .content-card-container {
-    @include mixins.dator {
-        width: 100vw;
-        margin: 0;
+    @include mixins.desktop {
+        width: 100%;
+        margin-top: 15px;
         display: flex;
         flex-wrap: wrap;
     }
@@ -19,7 +19,7 @@ h2 {
 
 .img-container {
     @include mixins.center-cards;
-    @include mixins.dator {
+    @include mixins.desktop {
         width: 50%;
         display: flex;
     }
@@ -30,7 +30,7 @@ h2 {
 
     &__img {
         @include mixins.circle-img(175px);
-        @include mixins.dator {
+        @include mixins.desktop {
             @include mixins.circle-img(230px);   
         }
     
@@ -39,20 +39,12 @@ h2 {
 
     &__text {
         @include mixins.card-text;
-        @include mixins.dator {
-            // width: 450px;
-            // height:100px;
+        @include mixins.desktop {
+            width: 400px;
+            min-height: 150px;
         }
      }
     }
-
-    // div p {
-    //     margin-top: 40px;
-    // }
-
-    // .fa-quote-right {
-    //     transform: scale(1,1.4);
-    // }
 
 a {
     text-decoration: none;
@@ -65,7 +57,7 @@ a {
     @include mixins.arrow;
     color:black;
 
-    @include mixins.dator {
+    @include mixins.desktop {
         padding-bottom: 25px;
     }
 }

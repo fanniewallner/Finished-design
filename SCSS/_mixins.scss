@@ -1,48 +1,34 @@
 @use "variables";
 
-    @mixin telefon {
-        @media screen and (min-width:variables.$small-screen) {
-            @content;
-        }
-}
-
-    @mixin dator {
-        @media screen and (min-width:variables.$big-screen) {
-            @content;
-        }
-}
-        
-    
+     @mixin desktop {
+         @media screen and (min-width:variables.$big-screen) {
+             @content;
+         }
+ }
 
 // Bilder
 @mixin circle-img($imgSize) {
     box-shadow: gray 0 0 50px 1px;
     border-radius: 50%;
     width: $imgSize;
-    
+
 }
 
 // Texter
 
 @mixin card-text {
-    width: 300px;
-    min-height:150px;
+    width: 80%;
+    min-height:180px;
     background-color: lightgray;
     border-radius: 7px;
     padding: 10%;
-    margin: 5%;
+    margin: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    // padding-top: 50px;
 }
 
-
-
-
-
 // Positionering
-
 @mixin center-row{
     display: flex;
     flex-direction: row;
@@ -92,7 +78,7 @@
 
 // Hela element
 @mixin arrow {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     padding-bottom: 30px;

@@ -10,29 +10,29 @@
         padding-top: 30px;
         padding-bottom: 30px;
 
-        @include mixins.dator {
+        @include mixins.desktop {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
-            width: 100vw;
+            width: 100%;
         }
     }
 
     &__address {
         color: variables.$light-text-color;
-        padding: variables.$footer-padding;
+        // padding: variables.$footer-padding;
         align-items: variables.$text-align-left;
     }
 
     &__contact-info {
         color: variables.$light-text-color;
-        padding: variables.$footer-padding;
+        // padding: variables.$footer-padding;
     }
 
     &__icons {
         color: variables.$light-text-color;
-        padding: variables.$footer-padding;
+        // padding: variables.$footer-padding;
     }
 
 }
