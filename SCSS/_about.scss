@@ -41,7 +41,7 @@ h2 {
         @include mixins.card-text;
         @include mixins.desktop {
             width: 400px;
-            min-height: 150px;
+            min-height: 100px;
         }
      }
     }

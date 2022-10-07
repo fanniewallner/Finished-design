@@ -15,10 +15,9 @@
 }
 
 // Texter
-
 @mixin card-text {
     width: 80%;
-    min-height:180px;
+    min-height:80px;
     background-color: lightgray;
     border-radius: 7px;
     padding: 10%;
@@ -53,21 +52,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-}
-
-@mixin slogan-position {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-@mixin column-wrap {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
 }
 

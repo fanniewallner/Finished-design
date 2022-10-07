@@ -21,18 +21,17 @@
 
     &__address {
         color: variables.$light-text-color;
-        // padding: variables.$footer-padding;
+        margin-bottom: variables.$footer-padding;
         align-items: variables.$text-align-left;
     }
 
     &__contact-info {
         color: variables.$light-text-color;
-        // padding: variables.$footer-padding;
+        margin-bottom: variables.$footer-padding;
     }
 
     &__icons {
         color: variables.$light-text-color;
-        // padding: variables.$footer-padding;
     }
 
 }
